@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0rem;
+            margin: 0rem;
+            box-sizing: border-box;
+        }
+          .body{
+       height:100%;
+       width: 100%;
+          }
+        .container{
+            height: 100vh;
+            padding: 2rem 1rem;
+            margin: 0 auto;
+
+        }
+       .header_container{
+        margin-bottom: 2.8rem;
+       }
+        .headertitle{
+            font-size: 1.7rem;
+            line-height: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .headerdesc{
+            max-width: 568px;
+            text-align: center;
+            color: rgb(57, 55, 55);
+            margin: 0 auto;
+        }
+        .maincontainer{
+            padding-left: 5.5rem;
+            width:90vw;
+            display: grid;
+            gap: 1.5rem;
+            /* grid-template-columns: repeat(1,1fr); */
+            grid-template-columns: repeat(auto-fit,minmax(350px,400px));
+            justify-content: center;
+        }
+        .cardcontainer{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(73, 71, 71);
+            border-radius: 2px;
+        }
+        .cardimgcontainer{
+            position: relative;
+            overflow: hidden;
+            height: 14rem;
+
+        }
+        .cardcontainer:hover .cardimg{
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
+        .cardimg{
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        .cardtittlecontainer{
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+        .cardtittle{
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(56, 53, 53);
+            line-height: 1.5rem;
+        }
+        .cardtittleanker:hover  .cardtittle{
+            color: rgb(56, 56, 183);
+        }
+        .cardbody{
+            color: rgb(100, 95, 95);
+            font-size: 1rem;
+        }
+        .cardfooter{
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .authorcontainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+        .avatarcontainer{
+            margin: 2.5rem;
+           padding: 2rem;
+           height: 2.5rem;
+           width: 2.5rem;
+           overflow: hidden;
+           border: 1px solid black;
+           border-radius: 50%;
+        }
+        .authorinfocontainer{
+            display: flex;
+            flex-direction: column;
+        }
+        .name{
+            color: rgb(67, 67, 227);
+        }
+        .date{
+            color: rgb(101, 96, 96);
+        }
+      .cardtagcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.3rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+        border: 1px solid rgb(111, 106, 106);
+        border-radius: 2px;
+
+
+      }
+    </style>
+    
+</head>
+<body class="bodycontainer">
+    <div class="container">
+          <header class="header_container">
+          <h1 class="headertitle"> Anshu blogs</h1>
+          <p class="headerdesc">utilize this space to in corporate a captivating subheading crafted by chatgpt adding depth and intrigue to ur blog</p>
+          </header>
+          <div class="maincontainer">
+          <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+ 
+
+           <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+
+
+           <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+
+
+           <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+
+
+           <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+
+           <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+
+
+           <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+             </div>
+          </div>
+
+            <div class="cardcontainer">
+            <a href="#" class="cardimgcontainer">
+                <img src="barfi.jpeg" alt="" class="cardimg"loading="lazy" width="400px" height="600px">
+            </a>
+
+            <div class="cardtittlecontainer">
+                <a href="#" class="cardtittleanker">
+                    <h2 class="cardtittle">New gadgets released</h2>
+                </a>
+                <p class="cardbody">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.
+                </p>
+            </div>
+             <div class="cardfooter">
+                <div class="authorcontainer">
+                    <div class="avatarconatiner">
+                        <img src="https://avatar.iran.liara.run/public/boy" alt="" loading="lazy" class="authorvatar"width="50px" height="50px">
+                    </div>
+                    <div class="authorinfocontainer">
+                        <span class="name"> john doe</span>
+                        <span class="date">29 sept,2025</span>
+                    </div>
+                </div>
+                <div ></div>
+                <span class="cardtagcontainer">Technology</span>
+            </div>
+            </div>
+          </div>
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(137, 214, 188);
+            width: 100vw;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+           align-items: center;
+        }
+        .box{
+            background-color: azure;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px black;
+            position: relative;
+            transition: all 2s ease-in 0s;
+            display: flex;
+            flex-direction: column;
+            margin: 2px;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            img{
+                border-radius: 20px;
+            }
+        }
+        .box:hover{
+            transform: scale(1.2);
+            background-color: bisque;
+        }
+        .content{
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+       <img src="Artboard-2-1.png" alt="" width="475px" height="290px">
+       <div class="content"> 
+        <h1>Improve your front end skills by building Projects</h1>
+       <p>Scan the QR code to visit front End Mentor and take your coding skill to next level</p>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
